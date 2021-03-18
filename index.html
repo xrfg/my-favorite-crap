@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>favorite crap</title>
+    <style>
+      body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      main {
+        width: 100vw;
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        font-family: sans-serif;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem;
+        background-color: rgb(194, 194, 194);
+        border: 2px solid gray;
+        border-radius: 2px;
+      }
+      button {
+        padding: 10px;
+        font-size: 18px;
+        background-color: rgba(203, 30, 255, 0.151);
+        border-radius: 50%;
+        color: rgba(0, 0, 0, 0.5);
+        text-shadow: 1px 1px 1px rgb(4, 0, 255);
+        border: 1px solid rgb(203, 30, 255);
+        cursor: pointer;
+      }
+      ul {
+        list-style: none;
+        border: 1px solid rgb(203, 30, 255);
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      li {
+        background-color: rgb(218, 255, 220);
+        margin-left: -40px;
+        border-bottom: 1px solid rgb(203, 30, 255);
+        padding: 15px;
+        cursor: pointer;
+      }
+      li:last-of-type {
+        border-bottom: 0;
+      }
+      .hide {
+        display: none;
+      }
+      .toggle-favorite {
+        background-color: pink;
+      }
+      p {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div>
+        <h1>my favorite crap</h1>
+        <button>show crap</button>
+        <ul class="crap-list hide">
+          <li>freshly printed phone-case</li>
+          <li>rusty knobs</li>
+          <li>melted plastic</li>
+          <li>tea-tech</li>
+          <li>plant harnessing</li>
+          <li>gel</li>
+        </ul>
+        <p>🗑️ (select your favorite crap)</p>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
